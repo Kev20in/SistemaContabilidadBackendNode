@@ -1,7 +1,7 @@
 import { Body, Controller, Delete, Get, HttpStatus, NotFoundException, Param, Post, Put, Query, Res } from '@nestjs/common';
 import { CreateAccountContableDTO } from 'src/dto/account-contable.dto';
 import { AccountContableService } from './account-contable.service';
-import { ApiOperation, ApiParam, ApiQuery, ApiTags } from '@nestjs/swagger';
+import { ApiOperation, ApiParam, ApiTags } from '@nestjs/swagger';
 
 @ApiTags('Account-contable')
 @Controller('account-contable')
