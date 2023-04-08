@@ -11,24 +11,24 @@ export class AccountTypeService {
     private readonly accountTypeModel: Model<AccountType>,
   ) {}
 
-  async addAccountType(
+  public async addAccountType(
     createAccountTypeDTO: CreateAccountTypeDTO,
   ): Promise<AccountType> {
     const accountType = new this.accountTypeModel(createAccountTypeDTO);
     return await accountType.save();
   }
 
-  async getAccountTypes(): Promise<AccountType[]> {
+  public async getAccountTypes(): Promise<AccountType[]> {
     const accountType = await this.accountTypeModel.find();
     return accountType;
   }
 
-  async getAccountType(accountTypeID: string): Promise<AccountType> {
+  public async getAccountType(accountTypeID: string): Promise<AccountType> {
     const accountType = await this.accountTypeModel.findById(accountTypeID);
     return accountType;
   }
 
-  async updateAccountType(
+  public async updateAccountType(
     accountTypeID: string,
     createAccountTypeDTO: CreateAccountTypeDTO,
   ): Promise<AccountType> {
@@ -39,7 +39,7 @@ export class AccountTypeService {
     );
     return accountType;
   }
-  async deleteAccountType(accountTypeID: string): Promise<AccountType> {
+  public async deleteAccountType(accountTypeID: string): Promise<AccountType> {
     const accountType = await this.accountTypeModel.findByIdAndDelete(
       accountTypeID,
     );

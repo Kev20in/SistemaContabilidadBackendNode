@@ -1,9 +1,9 @@
 import { Schema } from "mongoose";
 
 
-export const AccountTypeSchema = new Schema({
+export const CurrencyTypeSchema = new Schema({
     codigo: String,
     descripcion: String,
-    origen: String,
+    ultimaTasaCambiara: Number,
     estado: Boolean
 })
