@@ -10,10 +10,7 @@ import { ContableEntriesModule } from './contable-entries/contable-entries.modul
 
 @Module({
   imports: [AccountTypeModule, 
-    MongooseModule.forRoot(
-      // 'mongodb+srv://kevinagramonte:Kac*020305@cluster0.8lzn4tn.mongodb.net/api?retryWrites=true&w=majority'
-      'mongodb://localhost:27017/api'
-      ),
+    MongooseModule.forRoot('mongodb+srv://kevinagramonte:Kac*020305@cluster0.8lzn4tn.mongodb.net/api?retryWrites=true&w=majority'),
        AuxiliarSystemModule, CurrencyTypeModule, AccountContableModule, ContableEntriesModule],
   controllers: [AppController],
   providers: [AppService],
