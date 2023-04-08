@@ -29,9 +29,13 @@ export class AccountTypeController {
         return res.status(HttpStatus.OK).json(accountType)
     }
     @Put('/update/:AccountTypeID')
-    async updateAccountType(@Res() res, @Param('AccountTypeID') AccountTypeID){
-        const accountType = await this.accountTypeService.getAccountType(AccountTypeID);
-        return res.status(HttpStatus.OK).json(accountType)
+    async updateAccountType(@Res() res, @Param('AccountTypeID') AccountTypeID, @Body() createAccountTypeDTO:CreateAccountTypeDTO){
+        const accountType = await this.accountTypeService.updateAccountType(AccountTypeID, createAccountTypeDTO);
+        if(!accountType) throw new NotFoundException('AccountType does not exists')
+        return res.status(HttpStatus.OK).json({
+            Message: 'accountType updated succesfully',
+            accountType
+        })
     }
     @Delete('/delete/:AccountTypeID')
     async deleteAccountType(@Res() res, @Param('AccountTypeID') AccountTypeID){
