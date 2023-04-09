@@ -7,6 +7,7 @@ const mongoClient = new MongoClient(process.env.MONGODB_URI)
 
 
 export default async function(context: Context, req: HttpRequest): Promise<void> {
+  AzureHttpAdapter.handle(createApp, context, req);
 
   try {
     const database = await mongoClient.db(process.env.MONGODB_DATABASE);
@@ -21,7 +22,6 @@ export default async function(context: Context, req: HttpRequest): Promise<void>
      }
     }
   }
-  AzureHttpAdapter.handle(createApp, context, req);
 
 
 }
