@@ -1,7 +1,17 @@
 {
   "IsEncrypted": false,
   "Values": {
-    "AzureWebJobsStorage": "",
-    "FUNCTIONS_WORKER_RUNTIME": "node"
-  }
+    "AzureWebJobsStorage": "DefaultEndpointsProtocol=https;EndpointSuffix=core.windows.net;AccountName=mymongodbstorageback;AccountKey=+psnCnuYK0LuEaxRuvlou4u+LiRV60zumL9u6iCBFUQIKIJ/fe3QsnM/Z8euOGIbSpaZE44UG6N1+AStmTVIag==",
+    "FUNCTIONS_WORKER_RUNTIME": "node",
+    "MONGODB_URI": "mongodb+srv://kevinagramonte:Kac*020305@cluster0.8lzn4tn.mongodb.net/api?retryWrites=true&w=majority",
+    "MONGODB_CLUSTER": "Cluster0",
+    "MONGODB_DATABASE": "api",
+    "WEBSITE_NODE_DEFAULT_VERSION": "~18",
+    "FUNCTIONS_EXTENSION_VERSION": "~4",
+    "WEBSITE_CONTENTAZUREFILECONNECTIONSTRING": "DefaultEndpointsProtocol=https;EndpointSuffix=core.windows.net;AccountName=mymongodbstorageback;AccountKey=+psnCnuYK0LuEaxRuvlou4u+LiRV60zumL9u6iCBFUQIKIJ/fe3QsnM/Z8euOGIbSpaZE44UG6N1+AStmTVIag==",
+    "WEBSITE_CONTENTSHARE": "mymongodbfunctionappbacke474238e1594",
+    "APPINSIGHTS_INSTRUMENTATIONKEY": "f2a55576-42cc-432e-854c-6b4ec7f4eca4",
+    "mymongodbstorageback_STORAGE": "DefaultEndpointsProtocol=https;AccountName=mymongodbstorageback;AccountKey=+psnCnuYK0LuEaxRuvlou4u+LiRV60zumL9u6iCBFUQIKIJ/fe3QsnM/Z8euOGIbSpaZE44UG6N1+AStmTVIag=="
+  },
+  "ConnectionStrings": {}
 }
