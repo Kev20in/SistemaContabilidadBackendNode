@@ -25,6 +25,11 @@ export class CurrencyTypeController {
         const currencyType = await this.currencyTypeService.getCurrencyTypes();
         return res.status(HttpStatus.OK).json(currencyType)
     }
+    @Get('/get')
+    @ApiOperation({ summary: 'Obtener lista de AccountTypes' })
+    getprueba(){
+        return this.currencyTypeService.getprueba()
+    }
     
     @Get('/:CurrencyTypeID')
     @ApiOperation({ summary: 'Obtener un CurrencyType usando el ID' })

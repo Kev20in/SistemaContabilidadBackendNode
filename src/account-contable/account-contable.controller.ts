@@ -25,6 +25,12 @@ export class AccountContableController {
         const accountContable = await this.accountContableService.getAccountContables();
         return res.status(HttpStatus.OK).json(accountContable)
     }
+
+    @Get('/get')
+    @ApiOperation({ summary: 'Obtener lista de AccountTypes' })
+    getprueba(){
+        return this.accountContableService.getprueba()
+    }
     @Get('/:AccountContableID')
     @ApiOperation({ summary: 'Obtener un AccountContable usando el ID' })
     @ApiParam({ name: 'AccountContableID', description: 'ID del AccountContable', type: String })

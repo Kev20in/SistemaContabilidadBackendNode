@@ -45,4 +45,40 @@ export class AccountTypeService {
     );
     return accountType;
   }
+
+  public getprueba() {
+    const datos = [{
+      codigo: "001",
+      descripcion: "Activos",
+      origen: "Debito",
+      estado: true
+    },{
+      codigo: "002",
+      descripcion: "Pasivos",
+      origen: "Credito",
+      estado: true
+    },{
+      codigo: "003",
+      descripcion: "Capital",
+      origen: "Credito",
+      estado: true
+    },{
+      codigo: "004",
+      descripcion: "Ingresos",
+      origen: "Credito",
+      estado: true
+    },{
+      codigo: "005",
+      descripcion: "Costos",
+      origen: "Debito",
+      estado: false
+    },{
+      codigo: "006",
+      descripcion: "Gastos",
+      origen: "Debito",
+      estado: false
+    },]
+    return datos;
+  }
+
 }

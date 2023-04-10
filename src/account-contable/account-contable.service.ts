@@ -45,4 +45,69 @@ export class AccountContableService {
         );
         return accountContable;
       }
+
+      public getprueba() {
+        const datos = [{
+          codigo: '1',
+        descripcion: 'Activos',
+        permiteTransaciones: 'No',
+        nivel: 1,
+        cuentaMayor: '0',
+        balance: 0,
+        estado: true,
+        tipoCuentaContableId: '1',
+        tipoMonedaId: '1',
+        },{
+          codigo: '2',
+        descripcion: 'Efectivo en caja y banco',
+        permiteTransaciones: 'No',
+        nivel: 2,
+        cuentaMayor: '0',
+        balance: 0,
+        estado: true,
+        tipoCuentaContableId: '1',
+        tipoMonedaId: '1',
+        },{
+        codigo: '3',
+        descripcion: 'Caja Chica',
+        permiteTransaciones: 'Si',
+        nivel: 3,
+        cuentaMayor: '0',
+        balance: 0,
+        estado: false,
+        tipoCuentaContableId: '1',
+        tipoMonedaId: '1',
+        },{
+        codigo: '4',
+        descripcion: 'Cuenta Corriente Banco x ',
+        permiteTransaciones: 'Si',
+        nivel: 3,
+        cuentaMayor: '0',
+        balance: 0,
+        estado: false,
+        tipoCuentaContableId: '1',
+        tipoMonedaId: '1',
+        },{
+        codigo: '5',
+        descripcion: 'Inventarios y Mercancias',
+        permiteTransaciones: 'No',
+        nivel: 3,
+        cuentaMayor: '0',
+        balance: 0,
+        estado: true,
+        tipoCuentaContableId: '1',
+        tipoMonedaId: '1',
+        },{
+        codigo: '5',
+        descripcion: 'Ventas',
+        permiteTransaciones: 'No',
+        nivel: 8,
+        cuentaMayor: '0',
+        balance: 1000,
+        estado: true,
+        tipoCuentaContableId: '1',
+        tipoMonedaId: '1',
+        },]
+        return datos;
+      }
 }

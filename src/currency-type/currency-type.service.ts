@@ -45,4 +45,29 @@ export class CurrencyTypeService {
         );
         return currencyType;
       }
+
+      public getprueba() {
+        const datos = [{
+          codigo: "DOP",
+          descripcion: "Peso",
+          ultimaTasaCambiara: 1,
+          estado: true
+        },{
+          codigo: "USD",
+          descripcion: "Dolar",
+          ultimaTasaCambiara: 45.57,
+          estado: true
+        },{
+          codigo: "CAD",
+          descripcion: "Dolar Canadiense",
+          ultimaTasaCambiara: 40.40,
+          estado: false
+        },{
+          codigo: "EUR",
+          descripcion: "Euro",
+          ultimaTasaCambiara: 57.89,
+          estado: true
+        },]
+        return datos;
+      }
 }

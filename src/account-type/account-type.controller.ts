@@ -3,7 +3,6 @@ import { CreateAccountTypeDTO } from 'src/dto/account-type.dto';
 import { AccountTypeService } from './account-type.service';
 import { ApiOperation, ApiParam, ApiProperty, ApiTags } from '@nestjs/swagger';
 
-
 @ApiTags('Account-type')
 @Controller('account-type')
 export class AccountTypeController {
@@ -26,6 +25,11 @@ export class AccountTypeController {
     async getAccountTypes(@Res() res,){
         const accountType = await this.accountTypeService.getAccountTypes();
         return res.status(HttpStatus.OK).json(accountType)
+    }
+    @Get('/get')
+    @ApiOperation({ summary: 'Obtener lista de AccountTypes' })
+    getprueba(){
+        return this.accountTypeService.getprueba()
     }
 
     @Get('/:AccountTypeID')

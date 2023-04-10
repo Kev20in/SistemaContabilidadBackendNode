@@ -25,6 +25,12 @@ export class AuxiliarSystemController {
         const auxiliarSystem = await this.accountTypeService.getAuxiliarSystems();
         return res.status(HttpStatus.OK).json(auxiliarSystem)
     }
+    @Get('/get')
+    @ApiOperation({ summary: 'Obtener lista de AccountTypes' })
+    getprueba(){
+        return this.accountTypeService.getprueba()
+    }
+
     @Get('/:AuxiliarSystemID')
     @ApiOperation({ summary: 'Obtener un AuxiliarSystem usando el ID' })
     @ApiParam({ name: 'AuxiliarSystemID', description: 'ID del AuxiliarSystem', type: String })
