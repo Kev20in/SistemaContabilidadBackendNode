@@ -4,10 +4,10 @@ import { AppModule } from './app.module';
 import { initSwagger } from './app.swagger';
 
 export async function createApp(): Promise<INestApplication> {
-  const app = await NestFactory.create(AppModule, { cors: true });
+  const app = await NestFactory.create(AppModule);
   app.setGlobalPrefix('api');
   app.enableCors();
-  await app.init();
   initSwagger(app)
+  await app.init();
   return app;
 }

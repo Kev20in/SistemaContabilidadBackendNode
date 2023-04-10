@@ -2,13 +2,15 @@ import { Body, Controller, Get, Put, Delete, HttpStatus, Post, Res, Param, NotFo
 import { CreateAccountTypeDTO } from 'src/dto/account-type.dto';
 import { AccountTypeService } from './account-type.service';
 import { ApiOperation, ApiParam, ApiProperty, ApiTags } from '@nestjs/swagger';
+import { MongoService } from 'src/mongo.service';
 
 @ApiTags('Account-type')
 @Controller('account-type')
 export class AccountTypeController {
 
     constructor(
-        private readonly accountTypeService: AccountTypeService
+        private readonly accountTypeService: AccountTypeService,
+        private readonly mongoService: MongoService
     ){}
 
     @Post('/add')
@@ -24,6 +26,7 @@ export class AccountTypeController {
     @ApiOperation({ summary: 'Obtener lista de AccountTypes' })
     async getAccountTypes(@Res() res,){
         const accountType = await this.accountTypeService.getAccountTypes();
+        console.log('connected')
         return res.status(HttpStatus.OK).json(accountType)
     }
     @Get('/get')

@@ -3,7 +3,6 @@
   "Values": {
     "AzureWebJobsStorage": "DefaultEndpointsProtocol=https;EndpointSuffix=core.windows.net;AccountName=mymongodbstorageback;AccountKey=+psnCnuYK0LuEaxRuvlou4u+LiRV60zumL9u6iCBFUQIKIJ/fe3QsnM/Z8euOGIbSpaZE44UG6N1+AStmTVIag==",
     "FUNCTIONS_WORKER_RUNTIME": "node",
-    "MONGODB_URI": "mongodb://systembackenddb:JAftVZsjQOCRWXMAa1ByrBf4YO1iQtO3RUwkgffmNsIGAGDFMHgGvdoF2UJNatD7KwaQe9OPTenhACDbsQbXlg==@systembackenddb.mongo.cosmos.azure.com:10255/api?ssl=true&replicaSet=globaldb&retrywrites=false&maxIdleTimeMS=120000&appName=@systembackenddb@",
     "WEBSITE_NODE_DEFAULT_VERSION": "~18",
     "FUNCTIONS_EXTENSION_VERSION": "~4",
     "WEBSITE_CONTENTAZUREFILECONNECTIONSTRING": "DefaultEndpointsProtocol=https;EndpointSuffix=core.windows.net;AccountName=mymongodbstorageback;AccountKey=+psnCnuYK0LuEaxRuvlou4u+LiRV60zumL9u6iCBFUQIKIJ/fe3QsnM/Z8euOGIbSpaZE44UG6N1+AStmTVIag==",
@@ -11,5 +10,7 @@
     "APPINSIGHTS_INSTRUMENTATIONKEY": "f2a55576-42cc-432e-854c-6b4ec7f4eca4",
     "mymongodbstorageback_STORAGE": "DefaultEndpointsProtocol=https;AccountName=mymongodbstorageback;AccountKey=+psnCnuYK0LuEaxRuvlou4u+LiRV60zumL9u6iCBFUQIKIJ/fe3QsnM/Z8euOGIbSpaZE44UG6N1+AStmTVIag=="
   },
-  "ConnectionStrings": {}
+  "ConnectionStrings": {
+    "MONGODB_URI": "mongodb://systembackenddb:JAftVZsjQOCRWXMAa1ByrBf4YO1iQtO3RUwkgffmNsIGAGDFMHgGvdoF2UJNatD7KwaQe9OPTenhACDbsQbXlg==@systembackenddb.mongo.cosmos.azure.com:10255/api?ssl=true&replicaSet=globaldb&retrywrites=false&maxIdleTimeMS=120000&appName=@systembackenddb@"
+  }
 }
