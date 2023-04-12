@@ -48,46 +48,46 @@ export class AuxiliarSystemService {
 
       public getprueba() {
         const datos = [{
-          id: "1",
+          _id: "1",
           nombre: "Contabilidad",
           estado: true
         },{
-          id: "2",
+          _id: "2",
           nombre: "Nomina",
           estado: true
         },
         {
-          id: "3",
+          _id: "3",
           nombre: "Facturacion",
           estado: false
         },
         {
-          id: "4",
+          _id: "4",
           nombre: "Inventario",
           estado: true
         },
         {
-          id: "5",
+          _id: "5",
           nombre: "Cuentas x Cobrar",
           estado: false
         },
         {
-          id: "6",
+          _id: "6",
           nombre: "Cuentas x Pagar",
           estado: false
         },
         {
-          id: "7",
+          _id: "7",
           nombre: "Compras",
           estado: true
         },
         {
-          id: "8",
+          _id: "8",
           nombre: "Activos Fijos",
           estado: true
         },
         {
-          id: "9",
+          _id: "9",
           nombre: "Cheques",
           estado: true
         },

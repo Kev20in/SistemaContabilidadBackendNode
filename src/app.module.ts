@@ -12,7 +12,7 @@ import { MongoService } from './mongo.service';
 
 @Module({
   imports: [AccountTypeModule, 
-    MongooseModule.forRoot("mongodb://systembackenddb:JAftVZsjQOCRWXMAa1ByrBf4YO1iQtO3RUwkgffmNsIGAGDFMHgGvdoF2UJNatD7KwaQe9OPTenhACDbsQbXlg==@systembackenddb.mongo.cosmos.azure.com:10255/api?ssl=true&replicaSet=globaldb&retrywrites=false&maxIdleTimeMS=120000&appName=@systembackenddb@", {
+    MongooseModule.forRoot("mongodb://sistemacontabilidaddb:HiuiR2cK7ytO9kOyMWAZTKKaAHOIoKd79bpi0u8aLlzxaozSHe33y2LiNSxRpnP8XFnnpHrpdghKACDbAaG1FQ==@sistemacontabilidaddb.mongo.cosmos.azure.com:10255/api?ssl=true&retrywrites=false&maxIdleTimeMS=120000&appName=@sistemacontabilidaddb@", {
       useNewUrlParser: true,
       useUnifiedTopology: true,
     }),

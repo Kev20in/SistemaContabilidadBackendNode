@@ -48,31 +48,37 @@ export class AccountTypeService {
 
   public getprueba() {
     const datos = [{
+      id: 1,
       codigo: "001",
       descripcion: "Activos",
       origen: "Debito",
       estado: true
     },{
+      id: 2,
       codigo: "002",
       descripcion: "Pasivos",
       origen: "Credito",
       estado: true
     },{
+      id: 3,
       codigo: "003",
       descripcion: "Capital",
       origen: "Credito",
       estado: true
     },{
+      id: 4,
       codigo: "004",
       descripcion: "Ingresos",
       origen: "Credito",
       estado: true
     },{
+      id: 5,
       codigo: "005",
       descripcion: "Costos",
       origen: "Debito",
       estado: false
     },{
+      id: 6,
       codigo: "006",
       descripcion: "Gastos",
       origen: "Debito",
