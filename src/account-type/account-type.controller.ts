@@ -2,7 +2,6 @@ import { Body, Controller, Get, Put, Delete, HttpStatus, Post, Res, Param, NotFo
 import { CreateAccountTypeDTO } from 'src/dto/account-type.dto';
 import { AccountTypeService } from './account-type.service';
 import { ApiOperation, ApiParam, ApiProperty, ApiTags } from '@nestjs/swagger';
-import { MongoService } from 'src/mongo.service';
 
 @ApiTags('Account-type')
 @Controller('account-type')
@@ -10,7 +9,6 @@ export class AccountTypeController {
 
     constructor(
         private readonly accountTypeService: AccountTypeService,
-        private readonly mongoService: MongoService
     ){}
 
     @Post('/add')
@@ -34,7 +32,7 @@ export class AccountTypeController {
     getprueba(){
         return this.accountTypeService.getprueba()
     }
-
+  
     @Get('/:AccountTypeID')
     @ApiOperation({ summary: 'Obtener un AccountType usando el ID' })
     @ApiParam({ name: 'AccountTypeID', description: 'ID del AccountType', type: String })

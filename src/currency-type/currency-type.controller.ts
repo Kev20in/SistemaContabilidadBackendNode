@@ -30,6 +30,14 @@ export class CurrencyTypeController {
     getprueba(){
         return this.currencyTypeService.getprueba()
     }
+
+    @Get('/get/:CurrencyTypeID')
+    @ApiOperation({ summary: 'Obtener un CurrencyTypeID usando el ID' })
+    @ApiParam({ name: 'CurrencyTypeID', description: 'ID del CurrencyTypeID', type: Number })
+    findOne(@Param('CurrencyTypeID') id: number): any {
+      return this.currencyTypeService.findOne(id);
+    }
+
     
     @Get('/:CurrencyTypeID')
     @ApiOperation({ summary: 'Obtener un CurrencyType usando el ID' })

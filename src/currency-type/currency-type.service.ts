@@ -46,32 +46,46 @@ export class CurrencyTypeService {
         return currencyType;
       }
 
+      public datos = [{
+        _id: 1,
+        codigo: "DOP",
+        descripcion: "Peso",
+        ultimaTasaCambiara: 1,
+        estado: true
+      },{
+        _id: 2,
+        codigo: "USD",
+        descripcion: "Dolar",
+        ultimaTasaCambiara: 45.57,
+        estado: true
+      },{
+        _id: 3,
+        codigo: "CAD",
+        descripcion: "Dolar Canadiense",
+        ultimaTasaCambiara: 40.40,
+        estado: false
+      },{
+        _id: 4,
+        codigo: "EUR",
+        descripcion: "Euro",
+        ultimaTasaCambiara: 57.89,
+        estado: true
+      },]
+
       public getprueba() {
-        const datos = [{
-          _id:1,
-          codigo: "DOP",
-          descripcion: "Peso",
-          ultimaTasaCambiara: 1,
-          estado: true
-        },{
-          _id:2,
-          codigo: "USD",
-          descripcion: "Dolar",
-          ultimaTasaCambiara: 45.57,
-          estado: true
-        },{
-          _id:3,
-          codigo: "CAD",
-          descripcion: "Dolar Canadiense",
-          ultimaTasaCambiara: 40.40,
-          estado: false
-        },{
-          _id:4,
-          codigo: "EUR",
-          descripcion: "Euro",
-          ultimaTasaCambiara: 57.89,
-          estado: true
-        },]
-        return datos;
+        return this.datos;
+      }
+
+      public findOne(id: number): any {
+        console.log(id);
+        const datoEncontrado = this.datos.find(dato => dato._id === id);
+        if (datoEncontrado) {
+          return datoEncontrado;
+
+        } else {
+          return 'Datos No Encontrados';
+
+
+        }
       }
 }

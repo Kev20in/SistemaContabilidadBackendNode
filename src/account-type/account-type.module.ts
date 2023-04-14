@@ -3,7 +3,6 @@ import { AccountTypeService } from './account-type.service';
 import { AccountTypeController } from './account-type.controller';
 import { MongooseModule } from '@nestjs/mongoose';
 import { AccountTypeSchema } from 'src/schemas/account-type.schema';
-import { MongoService } from 'src/mongo.service';
 
 @Module({
   imports: [
@@ -11,7 +10,7 @@ import { MongoService } from 'src/mongo.service';
       {name: 'AccountType', schema: AccountTypeSchema}
     ])
   ],
-  providers: [AccountTypeService, MongoService],
+  providers: [AccountTypeService ],
   controllers: [AccountTypeController]
 })
 export class AccountTypeModule {}
