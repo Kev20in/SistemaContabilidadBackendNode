@@ -7,7 +7,6 @@ import { AuxiliarSystemModule } from './auxiliar-system/auxiliar-system.module';
 import { CurrencyTypeModule } from './currency-type/currency-type.module';
 import { AccountContableModule } from './account-contable/account-contable.module';
 import { ContableEntriesModule } from './contable-entries/contable-entries.module';
-import { MongoService } from './mongo.service';
 
 
 @Module({
@@ -18,6 +17,6 @@ import { MongoService } from './mongo.service';
     }),
        AuxiliarSystemModule, CurrencyTypeModule, AccountContableModule, ContableEntriesModule],
   controllers: [AppController],
-  providers: [AppService,MongoService], 
+  providers: [AppService], 
 })
 export class AppModule {}

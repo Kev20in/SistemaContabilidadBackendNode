@@ -10,5 +10,5 @@ const swaggerConfig = new DocumentBuilder()
 .setVersion('1.0')
 .build();
 const document = SwaggerModule.createDocument(app, swaggerConfig);
-SwaggerModule.setup( '/swagger', app, document);
+SwaggerModule.setup( '/swagger', app, document, );
 };
