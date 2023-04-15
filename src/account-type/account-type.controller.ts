@@ -24,7 +24,6 @@ export class AccountTypeController {
     @ApiOperation({ summary: 'Obtener lista de AccountTypes' })
     async getAccountTypes(@Res() res,){
         const accountType = await this.accountTypeService.getAccountTypes();
-        console.log('connected')
         return res.status(HttpStatus.OK).json(accountType)
     }
     @Get('/get')
